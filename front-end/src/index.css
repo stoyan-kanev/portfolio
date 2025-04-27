@@ -17,10 +17,10 @@ html {
 }
 
 body {
+  /*background: linear-gradient(185deg, #667eea, #764ba2);*/
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f2f5;
   color: #333;
 }
 
@@ -57,7 +57,6 @@ body {
 /* HERO */
 .hero {
   height: 40vh;
-  background: linear-gradient(185deg, #667eea, #764ba2);
   color: white;
   display: flex;
   flex-direction: row;
@@ -71,7 +70,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
   max-width: 1200px;
 }
 
@@ -81,8 +79,8 @@ body {
 }
 
 .hero-me img {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 50%;
   margin-left: 2rem;
@@ -116,6 +114,9 @@ body {
 .about {
   padding: 4rem 2rem;
   text-align: center;
+  background: #686767;
+  border-radius: 10px;
+
 }
 
 .about-container {
@@ -125,23 +126,28 @@ body {
 
 .about-container h2 {
   font-size: 2.5rem;
-  color: #333;
+  color: #ffffff;
   margin-bottom: 2rem;
 }
 
 .about-container p {
   font-size: 1.2rem;
-  color: #555;
+  color: #ffffff;
   line-height: 1.6;
 }
 
 .techstack, .projects {
   padding: 3rem 2rem 4rem 2rem;
   text-align: center;
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
+  font-size: 1.7rem;
+  color: #ffffff;
+  border-radius: 10px;
+
 
 }
 .techstack-table {
+
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -153,6 +159,7 @@ body {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 .techstack-row {
@@ -160,6 +167,7 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: 1.1rem;
+
 }
 
 .techstack-label {
@@ -181,6 +189,7 @@ body {
   flex-wrap: wrap;
   font-weight: 500;
   justify-content: flex-end;
+  color: #000000;
 }
 
 .techstack-value svg {
@@ -190,12 +199,14 @@ body {
 .certificates {
   padding: 2rem 2rem 4rem 2rem;
   text-align: center;
+  background: #686767;
+  border-radius: 10px;
 
 }
 
 .certificates h2 {
   font-size: 2.5rem;
-  color: #333;
+  color: #ffffff;
   margin-bottom: 2.5rem;
   display: flex;
   align-items: center;
@@ -241,6 +252,7 @@ body {
   background: white;
   padding: 2rem;
   border-radius: 10px;
+  color: #010101;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   width: 300px;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -264,7 +276,7 @@ body {
 .contact {
   padding: 2rem 2rem 4rem 2rem;
   text-align: center;
-  background: #f9fafb;
+  /*background: #f9fafb;*/
   border-radius: 12px;
   max-width: 700px;
   margin: 3rem auto;
@@ -280,40 +292,29 @@ body {
 .contact-items {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
 }
 
 .contact-item {
-  background: white;
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: center;
   gap: 1rem;
   justify-content: center;
-  transition: transform 0.3s, background-color 0.3s;
 }
 
-.contact-item:hover {
-  transform: translateY(-5px);
-  background-color: #eef2ff;
-}
 
 .contact-icon {
-  color: #667eea;
+  color: #f1f2f6;
   font-size: 1.8rem;
 }
 
 .contact-item a {
-  color: #333;
+  color: #e8b691;
   font-weight: 600;
   font-size: 1.2rem;
   text-decoration: none;
 }
 
 .contact-item a:hover {
-  text-decoration: underline;
   color: #ff7f50;
 }
 

@@ -15,7 +15,6 @@ function App() {
             <TechStack/>
             <Certificates/>
             <Projects/>
-            <Contact/>
             <Footer/>
         </>
     );

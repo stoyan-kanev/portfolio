@@ -1,10 +1,10 @@
-import {FaCode, FaTools, FaDatabase} from 'react-icons/fa';
+import {FaCode, FaTools, FaDatabase, FaWrench} from 'react-icons/fa';
 import {SiPython, SiJavascript, SiTypescript, SiDjango, SiAngular, SiReact, SiLinux, SiMysql} from 'react-icons/si';
 
 function TechStack() {
     return (
         <section id="techstack" className="techstack">
-            <h2>Tech Stack</h2>
+            <h2><FaWrench style={{ marginRight: '8px' }} />Tech Stack</h2>
             <div className="techstack-table">
                 <div className="techstack-row">
                     <span className="techstack-label">

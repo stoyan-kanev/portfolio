@@ -1,11 +1,12 @@
 import React from 'react';
 import { projects } from '../data/projects';
+import {FaComputer} from "react-icons/fa6";
 
 
 function Projects() {
     return (
         <section id="projects" className="projects">
-            <h2>Projects</h2>
+            <h2><FaComputer style={{ marginRight: '8px' }} />Projects</h2>
             <div className="project-list">
                 {projects.map((project, index) => (
                     <div key={index} className="project-card">

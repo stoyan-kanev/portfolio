@@ -1,13 +1,12 @@
+import {FaInfo} from "react-icons/fa";
+import {FaPencil} from "react-icons/fa6";
 
 function About() {
     return (
         <section className="about">
             <div className="about-container">
-                <h2>About Me</h2>
-                <p>I'm a motivated and ambitious Junior Web Developer, passionate about learning new technologies and
-                    continuously improving my skills. My goal is to grow and build a long-term career in the IT field,
-                    creating modern, scalable, and efficient applications. I enjoy solving challenges, working on
-                    real-world projects, and collaborating with teams where innovation and growth are encouraged.</p>
+                <h2><FaInfo style={{ marginRight: '8px' }} /> About Me</h2>
+                <p>Motivated Junior Developer with strong passion for web technologies. Always eager to learn, grow, and contribute to building modern applications.</p>
             </div>
         </section>
 
