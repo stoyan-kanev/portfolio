@@ -164,6 +164,47 @@ body {
   width: 20px;
   height: 20px;
 }
+.certificates {
+  padding: 2rem 2rem 4rem 2rem;
+  text-align: center;
+}
+
+.certificates h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.certificate-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.certificate-item {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certificate-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.certificate-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
 
 .project-list {
   display: flex;
@@ -326,5 +367,13 @@ body {
 
   .contact-item a {
     font-size: 1rem;
+  }
+  .certificate-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .certificate-item {
+    width: 90%;
   }
 }
