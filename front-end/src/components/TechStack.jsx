@@ -1,17 +1,17 @@
 import {FaCode, FaTools, FaDatabase} from 'react-icons/fa';
 import {SiPython, SiJavascript, SiTypescript, SiDjango, SiAngular, SiReact, SiLinux, SiMysql} from 'react-icons/si';
 
-function About() {
+function TechStack() {
     return (
-        <section id="about" className="about">
-            <h2>About Me</h2>
-            <div className="about-table">
-                <div className="about-row">
-                    <span className="about-label">
+        <section id="techstack" className="techstack">
+            <h2>Tech Stack</h2>
+            <div className="techstack-table">
+                <div className="techstack-row">
+                    <span className="techstack-label">
                         <FaCode style={{marginRight: '8px'}}/>
                         Languages:
                     </span>
-                    <span className="about-value">
+                    <span className="techstack-value">
                         <SiPython style={{marginRight: '5px', color: '#306998'}}/>
                         Python,
                         <SiJavascript style={{margin: '0 5px', color: '#f7df1e'}}/>
@@ -21,12 +21,12 @@ function About() {
                     </span>
                 </div>
 
-                <div className="about-row">
-                    <span className="about-label">
+                <div className="techstack-row">
+                    <span className="techstack-label">
                         <FaTools style={{marginRight: '8px'}}/>
                         Frameworks:
                     </span>
-                    <span className="about-value">
+                    <span className="techstack-value">
                         <SiAngular style={{marginRight: '5px', color: '#bf1818'}}/>
                         Angular,
                         <SiDjango style={{margin: '0 5px', color: '#16962f'}}/>
@@ -36,12 +36,12 @@ function About() {
                     </span>
                 </div>
 
-                <div className="about-row">
-                    <span className="about-label">
+                <div className="techstack-row">
+                    <span className="techstack-label">
                         <FaDatabase style={{marginRight: '8px'}}/>
                         Other Skills:
                     </span>
-                    <span className="about-value">
+                    <span className="techstack-value">
                         <SiLinux style={{marginRight: '5px', color: '#000000'}}/>
                         Linux System Administration,
                         <FaTools style={{margin: '0 5px', color: '#16962f'}}/>
@@ -55,4 +55,4 @@ function About() {
     );
 }
 
-export default About;
+export default TechStack;

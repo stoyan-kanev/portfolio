@@ -27,8 +27,8 @@ body {
 .navbar {
   background-color: rgba(51, 51, 51, 1);
   padding: 1rem;
-  /*position: fixed;*/
-  /*top: 0;*/
+  position: fixed;
+  top: 0;
   width: 100%;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -114,14 +114,11 @@ body {
   background-color: #ff5722;
 }
 
-
-
-
-.about, .projects, .contact {
-  padding: 8rem 2rem 4rem 2rem;
+.techstack, .projects {
+  padding: 3rem 2rem 4rem 2rem;
   text-align: center;
 }
-.about-table {
+.techstack-table {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -135,14 +132,14 @@ body {
   margin-right: auto;
 }
 
-.about-row {
+.techstack-row {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* ЦЕНТРИРАЙ ИКОНИТЕ И ТЕКСТОВЕТЕ */
+  align-items: center;
   font-size: 1.1rem;
 }
 
-.about-label {
+.techstack-label {
   display: flex;
   align-items: center;
   font-weight: 700;
@@ -150,12 +147,12 @@ body {
   font-size: 1.2rem;
 }
 
-.about-label svg {
+.techstack-label svg {
   width: 24px;
   height: 24px;
 }
 
-.about-value {
+.techstack-value {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -163,7 +160,7 @@ body {
   justify-content: flex-end;
 }
 
-.about-value svg {
+.techstack-value svg {
   width: 20px;
   height: 20px;
 }
@@ -199,6 +196,61 @@ body {
 .project-links a:hover {
   text-decoration: underline;
 }
+.contact {
+  padding: 2rem 2rem 4rem 2rem;
+  text-align: center;
+  background: #f9fafb;
+  border-radius: 12px;
+  max-width: 700px;
+  margin: 3rem auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2.5rem;
+}
+
+.contact-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-item {
+  background: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.contact-item:hover {
+  transform: translateY(-5px);
+  background-color: #eef2ff;
+}
+
+.contact-icon {
+  color: #667eea;
+  font-size: 1.8rem;
+}
+
+.contact-item a {
+  color: #333;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+  color: #ff7f50;
+}
 
 .footer {
   background-color: #333;
@@ -209,6 +261,11 @@ body {
 }
 /* ----------------- RESPONSIVE ----------------- */
 @media (max-width: 768px) {
+  .techstack, .projects, .contact{
+    padding: 2rem;
+  }
+
+
   .hero {
     height: auto;
     padding-top: 6rem;
@@ -236,13 +293,38 @@ body {
   .hero-subtitle {
     font-size: 1.2rem;
   }
-  .about-row {
+  .techstack-row {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
   }
 
-  .about-value {
+  .techstack-value {
     justify-content: flex-start;
+  }
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+    padding: 1.5rem;
+  }
+  .contact {
+    padding: 6rem 1rem 3rem 1rem;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .contact-item a {
+    font-size: 1rem;
   }
 }

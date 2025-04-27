@@ -13,7 +13,7 @@ function Projects() {
                         <p>{project.description}</p>
                         <div className="project-links">
                             <a href={project.githubLink} target="_blank" rel="noopener noreferrer">GitHub</a>
-                            {project.liveLink && (<a href={project.liveLink} target="_blank" rel="noopener noreferrer">Live</a>)}
+                            {/*{project.liveLink && (<a href={project.liveLink} target="_blank" rel="noopener noreferrer">Live</a>)}*/}
                         </div>
                     </div>
                 ))}
