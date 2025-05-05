@@ -334,7 +334,7 @@ body {
 
 
   .hero {
-    height: auto;
+    height: 90vh;
     padding-top: 6rem;
     padding-bottom: 4rem;
   }
@@ -418,4 +418,5 @@ body {
   .hidden-me-img{
     display: block;
   }
+
 }
