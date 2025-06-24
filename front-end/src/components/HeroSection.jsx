@@ -2,7 +2,7 @@ import React from "react";
 import profileImage from "../../public/me.jpg";
 export default function HeroSection() {
     return (
-        <section className="min-h-screen flex flex-col md:flex-row items-center justify-center text-center bg-gradient-to-br from-gray-900 to-black text-white px-4">
+        <section className="min-h-screen flex flex-col md:flex-row items-center justify-center text-center  text-white px-4">
             <div className="md:w-1/2 mb-8 md:mb-0">
                 <img
                     src={profileImage}
@@ -30,6 +30,7 @@ export default function HeroSection() {
                     </a>
                 </div>
             </div>
+
         </section>
     );
 }

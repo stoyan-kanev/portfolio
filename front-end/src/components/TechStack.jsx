@@ -14,7 +14,10 @@ export function TechStack() {
     const techs = ["Python", "JavaScript", "React", "Django", "Node.js", "PostgreSQL", "Angular", "Docker"];
 
     return (
-        <section id="tech" className="py-20 bg-gray-900 text-white px-4">
+        <section id="tech" className="py-20  text-white px-4">
+            <div className="w-100 h-1 bg-gray-500 mx-auto mb-8 rounded-full" />
+
+
             <h2 className="text-4xl font-bold text-center mb-10">Tech Stack</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto text-center">
                 {techs.map((tech) => (

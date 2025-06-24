@@ -1,6 +1,9 @@
 export function Certificates() {
     return (
-        <section id="certificates" className="py-20 bg-gray-900 text-white px-4">
+        <section id="certificates" className="py-20  text-white px-4">
+            <div className="w-100 h-1 bg-gray-500 mx-auto mb-8 rounded-full" />
+
+
             <h2 className="text-4xl font-bold text-center mb-10">Certificates</h2>
             <div className="flex flex-wrap justify-center items-center gap-6 max-w-6xl mx-auto">
                 <a href="https://softuni.bg/certificates/details/225828/6173141e" target="_blank" rel="noopener noreferrer">

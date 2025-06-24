@@ -3,7 +3,10 @@ import { projects } from '../data/projects';
 
 export function Projects() {
     return (
-        <section id="projects" className="py-20 bg-black text-white px-4">
+        <section id="projects" className="py-20 text-white px-4">
+            <div className="w-100 h-1 bg-gray-500 mx-auto mb-8 rounded-full" />
+
+
             <h2 className="text-4xl font-bold text-center mb-10">Projects</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto justify-items-center">
                 {projects.map((project, index) => (
