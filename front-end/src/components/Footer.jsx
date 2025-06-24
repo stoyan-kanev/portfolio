@@ -1,11 +1,7 @@
-import React from 'react';
-
-function Footer() {
+export function Footer() {
     return (
-        <footer className="footer">
-            <p>&copy; {new Date().getFullYear()} Stoyan Kanev. All rights reserved.</p>
+        <footer className="py-6 bg-gray-800 text-center text-gray-400 text-sm">
+            &copy; {new Date().getFullYear()} Stoyan Kanev. All rights reserved.
         </footer>
     );
 }
-
-export default Footer;

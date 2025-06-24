@@ -1,46 +1,35 @@
-import React from 'react';
-import {FaEnvelope, FaGithub, FaLinkedin} from "react-icons/fa";
-
-function HeroSection() {
+import React from "react";
+import profileImage from "../../public/me.jpg";
+export default function HeroSection() {
     return (
-        <section id="home" className="hero">
-            <div className="hero-me">
-                <img src="/1647349180831.jpg" className='hidden-me-img' alt="me"/>
-
-                <div>
-                    <h1 className="hero-title">Hi, I'm Stoyan</h1>
-                    <p className="hero-subtitle">Junior Web Developer</p>
-                    <a href="#projects" className="hero-button">View Projects</a>
-
+        <section className="min-h-screen flex flex-col md:flex-row items-center justify-center text-center bg-gradient-to-br from-gray-900 to-black text-white px-4">
+            <div className="md:w-1/2 mb-8 md:mb-0">
+                <img
+                    src={profileImage}
+                    alt="Stoyan Kanev"
+                    className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full mx-auto shadow-lg"
+                />
+            </div>
+            <div className="md:w-1/2">
+                <h1 className="text-5xl md:text-6xl font-bold mb-4">Hi, I'm Stoyan</h1>
+                <p className="text-xl md:text-2xl text-gray-400 max-w-xl mx-auto">
+                    Junior Full-Stack Developer with a passion for clean code, UI/UX, and building scalable apps using Python & JavaScript.
+                </p>
+                <div className="flex justify-center space-x-4 mt-6">
+                    <a
+                        href="#projects"
+                        className="px-6 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-medium transition"
+                    >
+                        View Projects
+                    </a>
+                    <a
+                        href="#contact"
+                        className="px-6 py-2 border border-gray-500 hover:border-white rounded-lg text-gray-300 hover:text-white transition"
+                    >
+                        Contact Me
+                    </a>
                 </div>
-                <div className="hero-me-wrap-links">
-                    <img src="/1647349180831.jpg" alt="me"/>
-
-                    <div className="contact-items">
-
-                        <div className="contact-item">
-                            <FaLinkedin className="contact-icon"/>
-                            <a href="https://www.linkedin.com/in/stoyan-kanev-042386207" target="_blank"
-                               rel="noopener noreferrer">
-                                Stoyan Kanev
-                            </a>
-                        </div>
-                        <div className="contact-item">
-                            <FaGithub className="contact-icon"/>
-                            <a href="https://github.com/LazyPotato02" target="_blank" rel="noopener noreferrer">
-                                Stoyan Kanev
-                            </a>
-                        </div>
-                        <div className="contact-item">
-                            <FaEnvelope className="contact-icon"/>
-                            <a href="mailto:stoyan.kanev178@gmail.com">stoyan.kanev178@gmail.com</a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </section>
     );
 }
-
-export default HeroSection;

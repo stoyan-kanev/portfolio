@@ -1,16 +1,10 @@
-import {FaInfo} from "react-icons/fa";
-import {FaPencil} from "react-icons/fa6";
-
-function About() {
+export function About() {
     return (
-        <section className="about">
-            <div className="about-container">
-                <h2><FaInfo style={{ marginRight: '8px' }} /> About Me</h2>
-                <p>Motivated Junior Developer with strong passion for web technologies. Always eager to learn, grow, and contribute to building modern applications.</p>
-            </div>
+        <section id="about" className="py-20 bg-black text-white text-center px-4">
+            <h2 className="text-4xl font-bold mb-4">About Me</h2>
+            <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+                I'm a junior developer focused on full-stack development. I enjoy turning complex problems into simple, beautiful and intuitive solutions. My toolkit includes React, Django, FastAPI, PostgreSQL, and Docker.
+            </p>
         </section>
-
     );
 }
-
-export default About;

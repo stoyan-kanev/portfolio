@@ -1,20 +1,22 @@
 import React from 'react';
 import HeroSection from './components/HeroSection';
-import TechStack from './components/TechStack.jsx';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Certificates from "./components/Certificates.jsx";
-import About from "./components/About.jsx";
+import {About} from "./components/About.jsx";
+import {TechStack} from "./components/TechStack.jsx";
+import {Projects} from "./components/Projects.jsx";
+import {Certificates} from "./components/Certificates.jsx";
+import {Footer} from "./components/Footer.jsx";
+import {Contact} from "./components/Contact.jsx";
+
 
 function App() {
     return (
         <>
             <HeroSection/>
             <About/>
-            <TechStack/>
             <Certificates/>
             <Projects/>
+            <TechStack/>
+            <Contact/>
             <Footer/>
         </>
     );
