@@ -26,30 +26,6 @@ Built with:
 - **Docker Compose** (Deployment)
 - **Cloudflare** (SSL, Domain & Proxy)
 
-## Deployment
-
-The portfolio is containerized with Docker and served via NGINX behind Cloudflare's proxy for additional security and performance.
-
-### How to run locally
-
-```bash
-# Clone the repository
-$ git clone https://github.com/yourusername/your-portfolio-repo.git
-
-# Navigate into the project folder
-$ cd portfolio
-
-# Build the frontend (optional if you have source code)
-$ cd front-end
-$ npm install
-$ npm run build
-
-# Go back and start the container
-$ cd ..
-$ docker compose up -d --force-recreate
-```
-
-Then open `https://localhost` (with SSL warning if using self-signed certs).
 
 ## 📂 Project Structure
 
