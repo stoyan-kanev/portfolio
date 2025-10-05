@@ -9,6 +9,7 @@ import {Contact} from "./components/Contact.jsx";
 
 
 function App() {
+
     return (
         <>
             <HeroSection/>

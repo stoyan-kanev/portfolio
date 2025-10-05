@@ -6,10 +6,10 @@ export const projects = [
         liveLink: "https://collab-platform.stoyan-kanev.com/",
     },
     {
-        title: "Chat App",
-        description: "Real-time chat application with authentication.",
-        githubLink: "https://github.com/LazyPotato02/Chat-App",
-        liveLink: "",
+        title: "Interview App",
+        description: "A modern remote interview and hiring platform that enables live coding interviews, video communication, and real-time collaboration between candidates and interviewers.",
+        githubLink: "https://github.com/stoyan-kanev/Interviewing-Platform",
+        liveLink: "https://interview-app.stoyan-kanev.com/",
     },
     {
         title: "Hiring Platform",
