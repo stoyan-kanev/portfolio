@@ -43,7 +43,7 @@ export function Contact() {
                         </a>
                         <a
                             className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400"
-                            href="https://github.com/LazyPotato02"
+                            href="https://github.com/stoyan-kanev"
                             target="_blank"
                             rel="noopener noreferrer"
                         >

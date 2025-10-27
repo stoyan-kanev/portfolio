@@ -6,19 +6,19 @@ export function Certificates() {
             href: "https://softuni.bg/certificates/details/225828/6173141e",
             img: "/js.png",
             alt: "JS Diploma",
-            caption: "JavaScript Advanced"
+            caption: "Software Engineering with JavaScript"
         },
         {
             href: "https://softuni.bg/certificates/details/171643/4f930d85",
             img: "/python.png",
             alt: "Python Diploma",
-            caption: "Python Core"
+            caption: "Software Engineering with Python"
         },
         {
             href: "https://softuni.bg/certificates/details/185444/4677035a",
             img: "/python_full_stack.png",
             alt: "Python Full Stack Diploma",
-            caption: "Python Full‑Stack"
+            caption: "Python Full‑Stack Developer"
         }
     ];
     const container = "container mx-auto max-w-6xl px-4";
